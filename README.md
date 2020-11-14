@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://rawic.github.io/react-news-feed/">
+  <a href="https://github.com/rawic/react-news-feed">
     <img src="readme/logo.svg" height="35" alt="rawic.me Logo">
   </a>
 
@@ -8,18 +8,18 @@
   <p align="center">
     Infinite Scroll And Lazy Loading.
     <br />
-    <a href="https://rawic.github.io//" target="_blank" rel="noopener noreferrer"><strong>Live demo »</strong></a>
+    <a href="https://github.com/rawic/react-news-feed" target="_blank" rel="noopener noreferrer"><strong>Live demo soon</strong></a>
     <br />
     <br />
-    <a href="https://rawic.github.io/react-news-feed/issues">Report Bug</a>
+    <a href="https://github.com/rawic/react-news-feed/issues">Report Bug</a>
     ·
-    <a href="https://rawic.github.io/react-news-feed/issues">Request Feature</a>
+    <a href="https://github.com/rawic/react-news-feed/issues">Request Feature</a>
   </p>
 </p>
 
 ## About Income Tracker
 
-<a align="center" href="https://rawic.github.io/react-news-feed/" rel="nofollow noopener noreferrer" target="blank">
+<a align="center" href="https://github.com/rawic/react-news-feed" rel="nofollow noopener noreferrer" target="blank">
   <img src="readme/app-screenshot.jpg" alt="rawic.me - home page" style="max-width: 100%;">
 </a>
 
@@ -105,6 +105,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Rafał Wichowski - [@rafalwichowski](https://twitter.com/rafalwichowski) - [hi@rawic.me](mailto:hi@rawic.me)
 
-Project Link: [https://rawic.github.io/react-news-feed/](https://rawic.github.io/react-news-feed/)
+Project Link: [https://rawic.github.io/react-news-feed](https://rawic.github.io/react-news-feed/)
 
 [app-screenshot]: readme/app-screenshot.jpg
