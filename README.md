@@ -8,7 +8,7 @@
   <p align="center">
     Infinite Scroll And Lazy Loading.
     <br />
-    <a href="https://github.com/rawic/react-news-feed" target="_blank" rel="noopener noreferrer"><strong>Live demo soon</strong></a>
+    <strong>Live demo soon</strong>
     <br />
     <br />
     <a href="https://github.com/rawic/react-news-feed/issues">Report Bug</a>
