@@ -16,14 +16,18 @@ export default function useFetch(url) {
     getData(url)
       .then((response) => {
         // Just to show loading
-        setTimeout(() => {
-          setData((prevData) => [...new Set([...prevData, ...response])]);
-          setHasMore(response.length > 0);
-          setLoading(false);
-        }, 1000);
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            setData((prevData) => [...new Set([...prevData, ...response])]);
+            setHasMore(response.length > 0);
+            resolve();
+          }, 1500);
+        });
       })
       .catch((e) => {
         setError(e);
+      })
+      .finally(() => {
         setLoading(false);
       });
   }, [url]);

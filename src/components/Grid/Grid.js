@@ -1,5 +1,8 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import PropTypes from 'prop-types';
 import styles from './Grid.module.css';
+
 import Post from '../Post/Post';
 
 const Grid = ({ posts, lastPostElementRef }) => (
@@ -7,7 +10,7 @@ const Grid = ({ posts, lastPostElementRef }) => (
     {posts.map((post, index) => {
       const singlePost =
         posts.length === index + 1 ? (
-          <Post ref={lastPostElementRef} key={post.title} {...post} />
+          <Post key={post.title} ref={lastPostElementRef} {...post} />
         ) : (
           <Post key={post.title} {...post} />
         );
@@ -27,5 +30,25 @@ const Grid = ({ posts, lastPostElementRef }) => (
     })}
   </TransitionGroup>
 );
+
+Grid.propTypes = {
+  posts: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      thumb: PropTypes.string.isRequired,
+      date: PropTypes.string.isRequired,
+      excerpt: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  lastPostElementRef: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
+  ]),
+};
+
+Grid.defaultProps = {
+  lastPostElementRef: null,
+};
 
 export default Grid;

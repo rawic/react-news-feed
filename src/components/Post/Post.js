@@ -1,10 +1,10 @@
-import { forwardRef } from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
+import { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import PreloadImage from 'react-preload-image';
 import styles from './Post.module.css';
 
-const Post = ({ date, thumb, title, url }, ref) => (
+const Post = forwardRef(({ date, thumb, title, url }, ref) => (
   <article className={styles.post} ref={ref}>
     <a
       href={url}
@@ -24,7 +24,7 @@ const Post = ({ date, thumb, title, url }, ref) => (
       <span className={styles.date}>{date}</span>
     </a>
   </article>
-);
+));
 
 Post.propTypes = {
   date: PropTypes.string.isRequired,
@@ -33,4 +33,4 @@ Post.propTypes = {
   url: PropTypes.string.isRequired,
 };
 
-export default forwardRef(Post);
+export default Post;

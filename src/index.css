@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -28,11 +30,11 @@ a {
   font-weight: 800;
 }
 
-
 /* Fade transition */
 .fade-enter {
   opacity: 0;
 }
+
 .fade-enter-done {
   opacity: 1;
   transition: opacity 1s ease;

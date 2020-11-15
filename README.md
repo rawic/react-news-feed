@@ -33,10 +33,10 @@
 - Hooks (Custom hooks) ✔️
 - Compound components ❌
 - Cache ❌
-- PropTypes ❌
+- PropTypes ✔️
 - Automated tests (Jest, React Testing Library) ❌
 - Migrate to TypeScript ❌
-- Configure ESlint & Prettier ❌
+- Configure ESlint & Prettier ✔️
 - ...
 
 ### Built with
@@ -79,7 +79,7 @@ yarn
 
 ## Usage
 
-Run the app (+ JSON Server)
+Run the app (+ JSON Server on port 4000)
 
 ```sh
 yarn dev
@@ -93,7 +93,7 @@ yarn build
 
 ### Usage via network
 
-Modify `json-server` command in the packages.json file (e.g. `json-server --host 192.168.1.1 --watch db.json --port 5000`).
+Modify `json-server` command in the packages.json file (e.g. `json-server --host 192.168.1.1 --watch db.json --port 4000`).
 
 Modify `API_URL` in the constants.js file (e.g. `http://192.168.1.1:5000`).
 
