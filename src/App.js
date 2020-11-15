@@ -36,7 +36,7 @@ function App() {
       {loading && <Loading />}
 
       {/* TODO: */}
-      {error && 'Error'}
+      {error && <p>{error}</p>}
     </section>
   );
 }
