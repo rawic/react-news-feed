@@ -95,7 +95,7 @@ yarn build
 
 Modify `json-server` command in the packages.json file (e.g. `json-server --host 192.168.1.1 --watch db.json --port 4000`).
 
-Modify `API_URL` in the constants.js file (e.g. `http://192.168.1.1:5000`).
+Modify `API_URL` in the constants.js file (e.g. `http://192.168.1.1:4000`).
 
 ## License
 
