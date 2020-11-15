@@ -29,7 +29,12 @@ function App() {
 
   return (
     <section className="App">
-      <h1 className="title">👁️ Recent posts</h1>
+      <h1 className="title">
+        <span role="img" aria-label="">
+          👁️
+        </span>{' '}
+        Recent posts
+      </h1>
 
       <Grid posts={data} lastPostElementRef={lastPostElementRef} />
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getData } from './../utilities';
+import { getData } from '../utilities';
 
 export default function useFetch(url) {
   const [loading, setLoading] = useState(true);
@@ -14,11 +14,11 @@ export default function useFetch(url) {
     setError(null);
 
     getData(url)
-      .then((data) => {
+      .then((response) => {
         // Just to show loading
         setTimeout(() => {
-          setData((prevData) => [...new Set([...prevData, ...data])]);
-          setHasMore(data.length > 0);
+          setData((prevData) => [...new Set([...prevData, ...response])]);
+          setHasMore(response.length > 0);
           setLoading(false);
         }, 1000);
       })

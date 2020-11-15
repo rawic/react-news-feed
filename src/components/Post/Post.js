@@ -1,4 +1,6 @@
 import { forwardRef } from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import PropTypes from 'prop-types';
 import PreloadImage from 'react-preload-image';
 import styles from './Post.module.css';
 
@@ -23,5 +25,12 @@ const Post = ({ date, thumb, title, url }, ref) => (
     </a>
   </article>
 );
+
+Post.propTypes = {
+  date: PropTypes.string.isRequired,
+  thumb: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+};
 
 export default forwardRef(Post);

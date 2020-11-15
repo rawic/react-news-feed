@@ -1,11 +1,11 @@
-import styles from './Grid.module.css';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import Post from './../Post/Post';
+import styles from './Grid.module.css';
+import Post from '../Post/Post';
 
 const Grid = ({ posts, lastPostElementRef }) => (
   <TransitionGroup className={styles.gridContainer}>
     {posts.map((post, index) => {
-      let singlePost =
+      const singlePost =
         posts.length === index + 1 ? (
           <Post ref={lastPostElementRef} key={post.title} {...post} />
         ) : (
