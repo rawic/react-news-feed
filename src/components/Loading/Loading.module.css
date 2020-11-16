@@ -23,7 +23,7 @@
 }
 .loader:after {
   animation: ball2 1s infinite;
-  background-color: #00c2ff;
+  background-color: rgb(255, 145, 0);
   box-shadow: 30px 0 0 #fdc500;
 }
 

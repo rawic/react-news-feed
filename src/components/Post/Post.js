@@ -20,8 +20,10 @@ const Post = forwardRef(({ date, thumb, title, url }, ref) => (
         lazy
       />
 
-      <h2 className={styles.title}>{title}</h2>
-      <span className={styles.date}>{date}</span>
+      <div className={styles.content}>
+        <h2 className={styles.title}>{title}</h2>
+        <span className={styles.date}>{date}</span>
+      </div>
     </a>
   </article>
 ));

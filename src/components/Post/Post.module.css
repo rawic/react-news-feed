@@ -1,29 +1,12 @@
 .post {
   border-radius: 6px;
-  box-shadow: 0 0 15px rgba(95, 95, 95, 0.438);
+  box-shadow: 0 0 15px -2px rgba(95, 95, 95, 0.4);
   grid-column: auto / span 6;
   grid-row: auto / span 3;
   height: 310px;
   overflow: hidden;
   position: relative;
   will-change: opacity;
-}
-
-.post::before {
-  background: linear-gradient(
-    0deg,
-    rgba(43, 40, 87, 1) 38%,
-    rgba(99, 91, 250, 0.171) 55%
-  );
-  content: '';
-  display: block;
-  height: 100%;
-  left: 0;
-  opacity: 0.8;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
 }
 
 .post:nth-child(1) {
@@ -69,7 +52,7 @@
 }
 
 .image {
-  background-color: rgb(43, 40, 87);
+  background-color: #111;
   filter: contrast(120%) brightness(120%) grayscale(0);
   height: 100%;
   left: 0;
@@ -91,17 +74,27 @@
 }
 
 .url:hover .image {
-  filter: contrast(120%) brightness(120%) grayscale(100%);
+  filter: contrast(150%) brightness(110%) grayscale(40%);
+}
+
+.content {
+  background-color: rgba(0,0,0,0.85);
+  border-radius: 6px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .title {
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 800;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .date {
-  color: rgb(135, 147, 170);
+  color: rgb(255, 145, 0);
+  font-size: 14px;
   font-weight: 600;
 }

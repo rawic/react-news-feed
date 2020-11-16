@@ -7,7 +7,7 @@ import useFetch from './hooks/useFetch';
 function App() {
   const [pageNumber, setPageNumber] = useState(1);
 
-  const { loading, error, data, hasMore } = useFetch(
+  const { loading, error, fetchedData, hasMore } = useFetch(
     `${API_URL}/posts?_page=${pageNumber}`
   );
 
@@ -30,13 +30,10 @@ function App() {
   return (
     <section className="App">
       <h1 className="title">
-        <span role="img" aria-label="">
-          👁️
-        </span>{' '}
-        Recent posts
+        <span aria-hidden="true">👁️</span> Recent posts
       </h1>
 
-      <Grid posts={data} lastPostElementRef={lastPostElementRef} />
+      <Grid posts={fetchedData} lastPostElementRef={lastPostElementRef} />
 
       {loading && <Loading />}
 
