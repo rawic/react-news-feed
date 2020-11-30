@@ -29,6 +29,7 @@
 - Fetch data ✔️
 - Transitions ✔️
 - RWD ✔️
+- Virtual scrolling ❌
 - Styled Components ❌
 - Hooks (Custom hooks) ✔️
 - Compound components ❌
