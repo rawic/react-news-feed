@@ -17,7 +17,7 @@
   </p>
 </p>
 
-## About Income Tracker
+## About React news feed
 
 <a align="center" href="https://github.com/rawic/react-news-feed" rel="nofollow noopener noreferrer" target="blank">
   <img src="readme/app-screenshot.jpg" alt="rawic.me - home page" style="max-width: 100%;">
